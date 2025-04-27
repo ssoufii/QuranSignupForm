@@ -67,19 +67,25 @@ const firebaseConfig = {
     db.ref('slots/' + sanitizedSlot).set({
       name: name,
       time: selectedSlot
-    }).then(() => {
-      // Hide form
+    })// After successful submission
+    .then(() => {
+      // Hide the form
       document.getElementById('signup-form').style.display = 'none';
-  
-      // Thank you message
+    
+      // Create Thank You message
       const thankYouDiv = document.createElement('div');
       thankYouDiv.className = 'thank-you';
-      thankYouDiv.innerHTML = `<h2>Thank you, ${name}!</h2><p>You booked ${selectedSlot}.</p>`;
-      document.querySelector('.container').appendChild(thankYouDiv);
-    }).catch((error) => {
-      console.error('Error writing to database:', error);
-      alert('There was an error booking your time.');
+      thankYouDiv.innerHTML = `
+        <h2>Thank you, ${name}!</h2>
+        <p>You booked ${selectedSlot}.</p>
+      `;
+    
+      // Clear the container and add thank you message
+      const container = document.querySelector('.container');
+      container.innerHTML = ''; // clear old content
+      container.appendChild(thankYouDiv);
     });
+    
   });
   
   // Listen for bookings

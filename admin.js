@@ -51,4 +51,14 @@ const firebaseConfig = {
       alert('There was an error.');
     });
   });
+  // Handle Back button click
+  document.getElementById('back-button').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+
+  // Handle Back button from Login page
+  document.getElementById('back-button-login').addEventListener('click', function() {
+    window.location.href = 'index.html';
+  });
+  
   
