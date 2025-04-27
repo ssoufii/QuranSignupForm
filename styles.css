@@ -97,13 +97,65 @@ body {
     color: navy;
     font-size: 1.2rem;
   }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #dateInput {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-group input {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  .button-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 45px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+  }
+   
+  
+  
   
   /* Mobile tweaks */
 /* Mobile view improvements */
 @media (max-width: 600px) {
   .container {
-    max-width: 97%; /* Even wider on small screens */
-    width: 97%;
+    max-width: 96%; /* Even wider on small screens */
+    width: 78%;
     padding: 20px;
   }
 
@@ -123,13 +175,42 @@ body {
     font-size: 18px;
     padding: 12px;
   }
+  button {
+    width: auto; /* Don't stretch the button to full width */
+    padding: 10px 20px; /* Adjust padding inside buttons */
+    font-size: 16px; /* Make font size normal */
+  }
+  
+  button#loginButton {
+    margin-top: 10px;
+  }
+  
+  button#backButton {
+    margin-top: 10px;
+  }
 
-  #submit-button, #login-button, #reset-button, #back-button, #back-button-login {
+  
+  /* #submit-button, #login-button, #reset-button, #back-button, #back-button-login {
     width: 100%;
     font-size: 20px;
     padding: 16px;
+  } */
+  button {
+    width: auto; /* Don't stretch the button to full width */
+    padding: 10px 20px; /* Adjust padding inside buttons */
+    font-size: 16px; /* Make font size normal */
   }
-
+  
+  button#loginButton {
+    margin-top: 10px;
+  }
+  
+  button#backButton {
+    margin-top: 10px;
+  }
+  
+  
+  }
   #bookings-table th, #bookings-table td {
     font-size: 18px;
     padding: 14px;
@@ -142,5 +223,5 @@ body {
   .thank-you {
     font-size: 22px;
   }
-  }
+  
   
