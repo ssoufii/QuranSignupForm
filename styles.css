@@ -7,7 +7,7 @@ body {
   }
   
   .container {
-    max-width: 500px;
+    max-width: 900px;
     width: 90%;
     margin: 50px auto;
     background: white;
@@ -99,39 +99,47 @@ body {
   }
   
   /* Mobile tweaks */
+/* Mobile view improvements */
 @media (max-width: 600px) {
     .container {
-      max-width: 95%; /* Wider on small screens */
-      width: 95%;
+      max-width: 98%; /* Even wider on small screens */
+      width: 98%;
       padding: 20px;
     }
   
-    #name {
+    #name, #new-class-date {
       width: 100%;
-      font-size: 18px;
+      font-size: 20px;
+      padding: 14px;
     }
   
     #timeslots {
       justify-content: center;
+      gap: 12px;
     }
   
     .slot {
       min-width: 100px;
-      font-size: 16px;
-    }
-  
-    #submit-button {
       font-size: 18px;
-      width: 100%;
-      padding: 14px;
-    }
-  
-    #bookings-table th, #bookings-table td {
-      font-size: 16px;
       padding: 12px;
     }
   
+    #submit-button, #login-button, #reset-button, #back-button, #back-button-login {
+      width: 100%;
+      font-size: 20px;
+      padding: 16px;
+    }
+  
+    #bookings-table th, #bookings-table td {
+      font-size: 18px;
+      padding: 14px;
+    }
+  
     h1, h2 {
+      font-size: 26px;
+    }
+  
+    .thank-you {
       font-size: 22px;
     }
   }
