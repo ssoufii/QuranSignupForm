@@ -5,6 +5,12 @@ body {
     margin: 0;
     padding: 0;
   }
+  .thank-you {
+    text-align: center;
+    padding: 20px;
+    color: navy;
+    font-size: 1.2rem;
+  }
   
   .container {
     max-width: 500px;
