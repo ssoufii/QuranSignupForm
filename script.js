@@ -1,15 +1,16 @@
-// Firebase Setup
+import { initializeApp } from "firebase/app";
+
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID-default-rtdb.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyCFGsl9m4RJHKA66Hkao76z6SPiGmfa3jI",
+    authDomain: "quran-signup.firebaseapp.com",
+    projectId: "quran-signup",
+    storageBucket: "quran-signup.firebasestorage.app",
+    messagingSenderId: "68136046532",
+    appId: "1:68136046532:web:9454c8b85f3cdc04ee5e91"
   };
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
   
   // Timeslots
   const timeslots = [];
