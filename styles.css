@@ -7,7 +7,7 @@ body {
   }
   
   .container {
-    max-width: 780px;
+    max-width: 500px;
     width: 90%;
     margin: 50px auto;
     background: white;
@@ -101,46 +101,46 @@ body {
   /* Mobile tweaks */
 /* Mobile view improvements */
 @media (max-width: 600px) {
-    .container {
-      max-width: 98%; /* Even wider on small screens */
-      width: 98%;
-      padding: 20px;
-    }
-  
-    #name, #new-class-date {
-      width: 100%;
-      font-size: 20px;
-      padding: 14px;
-    }
-  
-    #timeslots {
-      justify-content: center;
-      gap: 12px;
-    }
-  
-    .slot {
-      min-width: 100px;
-      font-size: 18px;
-      padding: 12px;
-    }
-  
-    #submit-button, #login-button, #reset-button, #back-button, #back-button-login {
-      width: 100%;
-      font-size: 20px;
-      padding: 16px;
-    }
-  
-    #bookings-table th, #bookings-table td {
-      font-size: 18px;
-      padding: 14px;
-    }
-  
-    h1, h2 {
-      font-size: 26px;
-    }
-  
-    .thank-you {
-      font-size: 22px;
-    }
+  .container {
+    max-width: 97%; /* Even wider on small screens */
+    width: 97%;
+    padding: 20px;
+  }
+
+  #name, #new-class-date {
+    width: 100%;
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  #timeslots {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .slot {
+    min-width: 100px;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  #submit-button, #login-button, #reset-button, #back-button, #back-button-login {
+    width: 100%;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  #bookings-table th, #bookings-table td {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  h1, h2 {
+    font-size: 26px;
+  }
+
+  .thank-you {
+    font-size: 22px;
+  }
   }
   
