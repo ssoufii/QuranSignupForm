@@ -5,15 +5,10 @@ body {
     margin: 0;
     padding: 0;
   }
-  .thank-you {
-    text-align: center;
-    padding: 20px;
-    color: navy;
-    font-size: 1.2rem;
-  }
   
   .container {
     max-width: 500px;
+    width: 90%;
     margin: 50px auto;
     background: white;
     padding: 30px;
@@ -32,9 +27,11 @@ body {
   }
   
   #name {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   #timeslots {
@@ -51,6 +48,8 @@ body {
     cursor: pointer;
     user-select: none;
     transition: background 0.3s, color 0.3s;
+    min-width: 80px;
+    text-align: center;
   }
   
   .slot.selected {
@@ -77,5 +76,45 @@ body {
   
   #submit-button:hover {
     background: #001f5c;
+  }
+  
+  #bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #bookings-table th, #bookings-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .thank-you {
+    text-align: center;
+    padding: 20px;
+    color: navy;
+    font-size: 1.2rem;
+  }
+  
+  /* Mobile tweaks */
+  @media (max-width: 600px) {
+    .slot {
+      min-width: 100px;
+      font-size: 14px;
+    }
+  
+    #submit-button {
+      font-size: 18px;
+    }
+  
+    #name {
+      font-size: 18px;
+    }
+  
+    #bookings-table th, #bookings-table td {
+      font-size: 16px;
+    }
   }
   
