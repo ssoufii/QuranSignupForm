@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quran Class Signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quran Class Signup</h1>
+    
+    <form id="signup-form">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <div id="calendar">
+        <h2>Class: Friday</h2>
+        <div id="timeslots"></div>
+      </div>
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+  </div>
+
+  <!-- Firebase Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

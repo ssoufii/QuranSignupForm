@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: navy;
+  }
+  
+  #signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #name {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #timeslots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .slot {
+    border: 1px solid navy;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .slot.selected {
+    background-color: navy;
+    color: white;
+  }
+  
+  .slot.booked {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  #submit-button {
+    margin-top: 20px;
+    padding: 12px;
+    background: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #submit-button:hover {
+    background: #001f5c;
+  }
+  
