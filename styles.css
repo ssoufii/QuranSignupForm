@@ -99,22 +99,40 @@ body {
   }
   
   /* Mobile tweaks */
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
+    .container {
+      max-width: 95%; /* Wider on small screens */
+      width: 95%;
+      padding: 20px;
+    }
+  
+    #name {
+      width: 100%;
+      font-size: 18px;
+    }
+  
+    #timeslots {
+      justify-content: center;
+    }
+  
     .slot {
       min-width: 100px;
-      font-size: 14px;
+      font-size: 16px;
     }
   
     #submit-button {
       font-size: 18px;
-    }
-  
-    #name {
-      font-size: 18px;
+      width: 100%;
+      padding: 14px;
     }
   
     #bookings-table th, #bookings-table td {
       font-size: 16px;
+      padding: 12px;
+    }
+  
+    h1, h2 {
+      font-size: 22px;
     }
   }
   
