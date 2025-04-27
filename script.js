@@ -23,6 +23,13 @@ const firebaseConfig = {
     }
   }
   timeslots.push("9:00 PM");
+  // Fetch class date and update on page
+  firebase.database().ref('classDate').on('value', snapshot => {
+    const classDate = snapshot.val();
+    if (classDate) {
+      document.getElementById('class-date').textContent = "Class: " + classDate;
+    }
+  });
   
   // Render the slots
   const slotsContainer = document.getElementById('timeslots');
