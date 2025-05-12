@@ -15,14 +15,19 @@ const firebaseConfig = {
   
   // Create time slots
   const timeslots = [];
-  for (let hour = 19; hour <= 20; hour++) {
-    for (let min = 0; min < 60; min += 15) {
-      const h = hour > 12 ? hour - 12 : hour;
-      const m = min.toString().padStart(2, '0');
-      timeslots.push(`${h}:${m} PM`);
+    for (let hour = 19; hour <= 20; hour++) {
+      for (let min = 0; min < 60; min += 15) {
+        const h = hour > 12 ? hour - 12 : hour;
+        const m = min.toString().padStart(2, '0');
+        const formattedTime = `${h}:${m} PM`;
+    
+        // Skip 8:45 PM and 9:00 PM
+        if (formattedTime === "8:45 PM" || formattedTime === "9:00 PM") continue;
+    
+        timeslots.push(formattedTime);
+      }
     }
-  }
-  timeslots.push("9:00 PM");
+
   // Fetch class date and update on page
   firebase.database().ref('classDate').on('value', snapshot => {
     const classDate = snapshot.val();
