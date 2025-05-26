@@ -15,7 +15,7 @@ const firebaseConfig = {
   
   // Create time slots
   const timeslots = [];
-    for (let hour = 18; hour <= 29; hour++) {
+    for (let hour = 18; hour <= 19; hour++) {
       for (let min = 0; min < 60; min += 15) {
         const h = hour > 12 ? hour - 12 : hour;
         const m = min.toString().padStart(2, '0');
